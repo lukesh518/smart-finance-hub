@@ -7,8 +7,8 @@ WORKDIR /app
 # Copy project files into container
 COPY . .
 
-# Compile Java source code into bin directory
-RUN javac -d bin -sourcepath src src/com/finance/Main.java
+# Dynamically find and compile all Java source files into bin directory
+RUN mkdir -p bin && javac -d bin $(find . -name "*.java")
 
 # Expose web server port
 EXPOSE 8080
