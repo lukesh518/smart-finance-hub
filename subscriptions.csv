@@ -1,0 +1,6 @@
+id,serviceName,monthlyCost,nextBillingDate,billingCycle,autoRenew
+SUB-201,"Netflix 4K Ultra HD",19.99,2026-08-29,MONTHLY,true
+SUB-202,"Spotify Premium Family",16.99,2026-09-05,MONTHLY,true
+SUB-203,"Amazon Prime Membership",14.99,2026-09-12,MONTHLY,true
+SUB-204,"ChatGPT Plus AI Subscription",20.00,2026-08-30,MONTHLY,true
+SUB-205,"Gym & Fitness Membership",45.00,2026-09-01,MONTHLY,true

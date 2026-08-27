@@ -1,0 +1,6 @@
+id,symbol,assetName,quantity,buyPrice,currentPrice,riskLevel
+AST-301,BTC,"Bitcoin",0.085,58000.0,64250.0,LOW
+AST-302,ETH,"Ethereum",1.25,2800.0,3450.0,LOW
+AST-303,SOL,"Solana",15.0,110.0,155.0,MEDIUM
+AST-304,NVDA,"Nvidia Stock",10.0,105.0,128.5,MEDIUM
+AST-305,PEPE,"Pepe Memecoin",2500000.0,0.000008,0.000011,HIGH

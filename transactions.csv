@@ -1,0 +1,9 @@
+id,description,amount,date,category,isIncome
+TXN-102,"University Tuition & Course Fees",850.0,2026-08-02,STUDY,false
+TXN-106,"Weekend Leisure Travel & Shopping",310.0,2026-08-15,TRAVEL,false
+TXN-107,"Movie Tickets & Gaming",95.0,2026-08-18,ENTERTAINMENT,false
+TXN-108,"Freelance Web Consulting",750.0,2026-08-20,FREELANCE,true
+TXN-31AF66,"engineering job",900.0,2026-08-27,SALARY,true
+TXN-103,"Programming Textbooks & Lab Supplies",20.0,2026-08-04,STUDY,false
+TXN-105,"Dining Out & Fast Food",40.0,2026-08-10,FOOD_DINING,false
+TXN-104,"Apartment Rent & Utilities",50.0,2026-08-05,HOUSING,false
