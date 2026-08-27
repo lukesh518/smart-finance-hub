@@ -4,17 +4,20 @@ FROM eclipse-temurin:21-jdk-alpine
 # Set working directory
 WORKDIR /app
 
-# Copy project files into container
+# Copy all repository files
 COPY . .
 
-# Dynamically find and compile all Java source files into bin directory
-RUN mkdir -p bin && javac -d bin $(find . -name "*.java")
+# Find all .java files anywhere in the repository and compile them using @sources.txt
+RUN mkdir -p bin && \
+    find . -type f -name "*.java" > sources.txt && \
+    echo "--- FOUND JAVA FILES ---" && \
+    cat sources.txt && \
+    javac -d bin @sources.txt
 
 # Expose web server port
 EXPOSE 8080
 
-# Environment variable for Cloud Port binding
 ENV PORT=8080
 
-# Run the Java Web Application
-CMD ["java", "-cp", "bin", "com.finance.Main"]
+# Run Main class from compiled bin directory
+CMD ["sh", "-c", "java -cp $(find . -name bin -type d | tr '\n' ':'). com.finance.Main"]
